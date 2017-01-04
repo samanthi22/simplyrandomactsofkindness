@@ -1,0 +1,16 @@
+// Place all the styles related to the welcome2 controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@mixin cover-background($img, $background-top:"center", $background-left:"center", $background-attachment:"fixed") {
+  background: image_url($img) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+
+html { 
+	@include cover-background('/assets/balloons.jpg');
+}
