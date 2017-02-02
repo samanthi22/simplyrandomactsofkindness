@@ -4,13 +4,13 @@
 
 
 @mixin cover-background($img, $background-top:"center", $background-left:"center", $background-attachment:"fixed") {
-  background: image_url($img) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment); 
+  background: url(image_path($img)) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;  
 }
 
-html { 
-	@include cover-background('/assets/balloons.jpg');
+.cover {
+	@include cover-background('balloons.jpg');
 }
