@@ -3,9 +3,9 @@
 <p> The time is now: <%= Time.now %></p>
 <p>You are at simplyrandomactsofkindness.com and this site is under construction. </p>
 <p> Hello!</p>
-<div ng-app="">
-<p>Name : <input type="text" ng-model="name" placeholder="Enter your name here"></p>
-<h1>Hello {{name}}, You are kind!</h1>
+<div ng-app="" ng-init="name='You'">
+<p>Please enter your name here : <input type="text" ng-model="name" placeholder="Enter your name here"></p>
+<h1>Hello {{name}}, You are kind! Super kind!</h1>
 
 </div>
 
